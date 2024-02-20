@@ -6,7 +6,7 @@ import * as DateFunctions from "./components/dateFunctions"
 function App() {
   return (
     <div className="App">
-      <p><ListGroup /><Greeting /></p>
+      <p><Greeting /><ListGroup /></p>
       <h2>Expiry: {DateFunctions.addDays(new Date(), 145).toLocaleDateString()}</h2>
       <h3>Course will end aprox. by: {DateFunctions.addMonths(new Date(), 5).toLocaleDateString()} </h3>
     </div>

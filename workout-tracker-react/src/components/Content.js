@@ -1,4 +1,3 @@
-
 export function ListGroup() {
     let exercisesList = [
       "leg press 45",
@@ -13,7 +12,19 @@ export function ListGroup() {
       "chest-supported dumbbell row",
       "pulldowns",
     ];
-    return <h1>List group</h1>;
+    return (
+        <div>
+            <h1>List of exercises</h1>
+            <ul>
+                {exercisesList.map((item, index) => (
+                    <li key={item}>
+                        {index} - {item}
+                    </li>
+                )
+                )}
+            </ul>
+        </div>
+    )
 };
 
 export function Greeting() {

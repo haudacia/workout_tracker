@@ -2,6 +2,10 @@
   background-color: #b7cdd3
 }
 
+div {
+  font-family: Syne Mono;
+  text-align: left;
+}
 .App {
   background-color: ;
   text-align: center;
