@@ -1,0 +1,21 @@
+
+export function ListGroup() {
+    let exercisesList = [
+      "leg press 45",
+      "squat",
+      "bulgarian split squat",
+      "unilateral deadlift",
+      "abduction",
+      "adduction",
+      "cable kickback",
+      "roman chair back extension",
+      "unilateral dumbbell row",
+      "chest-supported dumbbell row",
+      "pulldowns",
+    ];
+    return <h1>List group</h1>;
+};
+
+export function Greeting() {
+    return <p>Hi!</p>
+}
