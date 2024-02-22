@@ -63,6 +63,7 @@ function openCheck(dialog) {
     console.log("Dialog closed");
   }
 };
+
 /* <!DOCTYPE html>
 <html>
     <head>
