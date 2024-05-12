@@ -4,20 +4,29 @@
         <title>workout tracker</title>
         <link rel="stylesheet" href="style.css" type="text/css"/>
     </head>
-    <body>
+    <body onload="onLoad()"> <!-- eso ejecuta funcion de nombra onLoad()-->
         <h1>WORKOUT PLAN</h1>
-        <section id="intro">
-            <p>this will store data related to the workout split for january - march</p>
-            <h2>priorities</h2>
-            <ul>
-                <li>core</li>
+        <p>this will store data related to the workout split for january - march</p>
+        <div id="intro" class="container">
+            <h2 class="item1">priorities</h2>
+            <ul  class="item2">
+                <li >core</li>
                 <li>posteriores</li>
             </ul>
-        </section>
+            <a  class="item1" href="./log.html" target="_blank"><h2>log</h2></a>
+
+            <button  class="item" id="click-button">click to count</button>
+        <span class="counter-text"> 0 clicks</span>
+        </div>
         
-        <nav>
-            <a href="./log.html" target="_blank"><h2>log</h2></a>
-            <a href="./workout-plan-table.html" target="_blank"><h2>plan</h2></a>
-        </nav>
+        <div id="intro" class="container2">
+            <p class="item3">1</p>
+            <p class="item4">2</p>
+            <p class="item5">3</p>
+            <p class="item6">4</p>
+            <p class="item1">5</p>
+            <p class="item1">6</p>
+            <p class="item1">7</p>
+        </div>
     </body>
 </html>

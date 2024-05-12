@@ -1,10 +1,70 @@
 * {
-    font-family: ;
+    font-family: Roboto Condensed;
+}
+
+.container {
+    height: 200px;
+    border: 1px solid blue;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.item1 {
+    border: 1px solid red;
+    text-align: center;
+    align-self: flex-end; 
+    flex-grow: 2; /*valor relativo a los otros items del flex. 
+    ese item ocupara 2x el tamanho/ancho de los otros */
+}
+
+.item2 {
+    border: 1px solid fuchsia;
+    align-self: flex-start;
+    padding: 20px;
+}
+.container2 {
+    height: 300px;
+    border: 3px solid rgb(99, 211, 255);
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 40px 50px 30px 20px ; /* auto 50px 40px; */
+    grid-template-columns: 25% 100px 50px 40px;
+    grid-template-areas:
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+    flex-wrap: wrap;
+    flex-flow: column wrap;
+}
+
+.item3 {
+    grid-area: header;
+    border: 2px solid red;
+    padding: 20px;
+}
+
+.item4 {
+    grid-area: main;
+    border: 2px solid rgb(30, 0, 255);
+
+}
+
+.item5 {
+    grid-area: sidebar;
+}
+
+.item6 {
+    grid-area: footer;
 }
 
 h1 {
     color: blue;
-    background-color: pink;
+    background-color: ;
     font-size: 2em;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -14,7 +74,9 @@ body {
 }
 
 p {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Sono';
+    font-weight: lighter;
+    font-size: smaller;
 
 }
 
